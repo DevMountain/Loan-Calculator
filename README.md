@@ -1,9 +1,10 @@
 Loan-Calculator
 ===============
 
-Mini Project that uses the full stack. You'll create a really simple Angular app that calculates loan payment amounts based on an interest rate retrieved from a simple API that you'll also create.
+Mini Project that uses the full stack. 
 
 ##Objectives
+You'll create a really simple Angular app that calculates loan payment amounts based on an interest rate retrieved from a simple API that you'll also create.
 
 ##Step 1: Set up front end
 
