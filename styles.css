@@ -1,0 +1,24 @@
+.callout {
+  padding: 20px;
+  margin: 20px 0;
+  border: 1px solid #eee;
+  border-left-width: 5px;
+  border-radius: 3px;
+  border-left-color: #d9534f;
+}
+
+.callout h3 {
+  margin-top: 0;
+  margin-bottom: 5px;
+  color: #d9534f;
+}
+
+input.form-control {
+  display: inline-block;
+  width: 200px;
+  margin-left: 10px;
+}
+
+.row {
+  margin-bottom: 15px;
+}

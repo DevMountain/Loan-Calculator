@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body ng-app="LoanCalculator" ng-controller="MainCtrl">
+  <div class="container">
+    <h2>Free Loan Calculator!!</h2>
+    <div class="callout">
+      <h3>Important Information</h3>
+      Note: this interest rate may fluctuate <strong>a lot,</strong> given our current economic situation, the volatility of the stock market, foreign wars, and our own susceptibility to the temptation of dollar cheeseburgers.
+    </div>
+    <div class="text-center">
+      <h3>Current Interest Rate:</h3>
+      <h4 class="text-primary">{{interest_rate}}</h4>
+    </div>
+    <div class="loan-calculator">
+      <div class="row">
+        <div class="col-md-2">
+          <strong>Loan amount:</strong>
+        </div>
+        <div class="col-md-8">
+          $<input type="text" class="form-control" ng-model="principal" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2">
+          <strong>Loan term:</strong>
+        </div>
+        <div class="col-md-8">
+          48 months
+        </div>
+      </div>
+      <button class="btn btn-success">Calculate</button>
+    </div>
+    <div class="text-center">
+      <h4>My Monthly Payment is:</h4>
+      <h4 class="text-info"><strong>{{monthly_payment}}</strong></h4>
+    </div>
+  </div>
+</body>
+</html>
