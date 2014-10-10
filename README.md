@@ -12,7 +12,8 @@ We're going to set up our front end part of this app by having express fetch fil
 
 * Use express's static middleware to serve a folder of static assets.
  * Create a folder called "public"
- * Move the index.html file already in the repo to the public folder.
+ * Move the index.html file already in the repo to the public folder. (Your index.html already has the markup you need.)
+ * Move the styles.css to the public folder.
  * In the public folder, create a "js" folder.
  * In the js folder, create the following files:
  
@@ -22,7 +23,8 @@ public/js/controllers/main-ctrl.js
 public/js/services/bank-service.js
 ```
 
-Your index.html already has the markup you need.
+ * Create a server.js file that serves the static files found in the "public" folder. Hint: `app.use(express.static(__dirname+'/public'));`
+
 
 ##Step 2: Set up back end
 
