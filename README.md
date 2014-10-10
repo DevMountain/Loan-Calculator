@@ -25,18 +25,25 @@ public/js/services/bank-service.js
 
  * Create a server.js file that serves the static files found in the "public" folder. Hint: `app.use(express.static(__dirname+'/public'));`
 
+Verify that it's working by running your script, `node server.js` and opening the page in the browser, e.g. http://localhost:8080
 
 ##Step 2: Set up back end
 
-* Create a server.js file
-* Use express's static middleware to serve static files coming from the `public` directory
-* Create an endpoint that responds to a GET request on the `/interest_rate` route
+* In server.js, create an endpoint that responds to a GET request on the `/interest_rate` route
 * The interest_rate route should return a random number between 1 and 20, with two decimal places.
-* Test your endpoint to make sure it returns the interest rate in a JSON object
+* Test your endpoint using Postman to make sure it returns the interest rate in a JSON object
 
 ##Step 3: Connect front end to back end
 
-* Write a call in bank-service that retrieves the interest rate
+* Write the bank-service to include a method that returns a promise http call to retrieve the interest rate from your `/interest_rate` endpoint
 * Have MainCtrl make the call and store the rate as `$scope.interest_rate`
-* Load the app with http-server node module and make sure the interest rate shows
-* Calculate the monthly payment of a loan defined at `$scope.principal` over 4 years (48 months) with the interest rate retrieved. Store the value as `$scope.monthly_payment`
+* Run your app `node server.js` and make sure the interest rate shows
+* Calculate the monthly payment of a loan defined at `$scope.principal` over 4 years (48 months) with the interest rate retrieved. Store the value as `$scope.monthly_payment`. Hint: use the basic formula for calculating the total loan amount with interest:
+
+```
+A = Prt
+//A = total amount owed after interest
+//P = Principal amount
+//r = interest rate
+//t = time (in years)
+```
