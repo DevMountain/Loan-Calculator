@@ -41,7 +41,7 @@ Verify that it's working by running your script, `node server.js` and opening th
 * Calculate the monthly payment of a loan defined at `$scope.principal` over 4 years (48 months) with the interest rate retrieved. Store the value as `$scope.monthly_payment`. Hint: use the basic formula for calculating the total loan amount with interest:
 
 ```
-A = Prt
+A = P*r*t
 //A = total amount owed after interest
 //P = Principal amount
 //r = interest rate
