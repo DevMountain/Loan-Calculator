@@ -49,7 +49,7 @@ A = P*r*t
 
 // A = total amount interest owed
 
-A = A + (P*r*t)
+A = P + (P*r*t)
 
 // A = total amount owed with interest
 ```
